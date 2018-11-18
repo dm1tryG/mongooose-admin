@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: Arial;
+}
+
+.row {
+  display: flex;
+}
+
+.item {
+  text-align: left;
+  width: 75%;
+  margin: 5px auto;
+}
+
+input {
+  padding: 5px 6px;
+  display: block;
+  width: 75%;
+  margin: 5px auto;
+  border: none;
+}
+
+p {
+  padding: 6px;
+  text-align: left;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  color: #fff;
+  background-color: #444;
+  padding: 5px 6px;
+  margin: 5px;
+}
+
+section {
+  text-align: center;
+  margin: 5px;
+  padding: 5px;
+
+  background-color: #f2f2f2;
+  width: 25%;
+}

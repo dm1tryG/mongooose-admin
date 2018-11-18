@@ -1,0 +1,43 @@
+<div class="row">
+  <section>
+    <h3>{{ collection }} ({{ lenght }})</h3>
+    <div class="get">
+
+        {{# each items }}
+            <article class="item">
+              <div>id : {{ this._id }}</div>
+              <div>name: {{ this.name }}</div>
+              <div>position: {{ this.position }}</div>
+              <div>age: {{ this.age }}</div>
+              <a href="database/delete/{{this._id}}"><button>delete</button></a>
+            </article>
+        {{/each}}
+    </div>
+    <button><a href="/database">reload</a></button>
+  </section>
+
+  <section>
+    <h3>insert</h3>
+    <form class="insert" action="database/insert" method="post">
+      {{#each keys}}
+      <p>{{this}}:</p>
+      <input type="text" name="{{this}}">
+      {{/each}}
+      <button type="submit">insert</button>
+    </form>
+  </section>
+
+  <section>
+    <h3>update</h3>
+    <form class="update" action="database/update" method="post">
+      <p>_id:</p>
+      <input type="text" name="id">
+      {{#each keys}}
+      <p>{{this}}:</p>
+      <input type="text" name="{{this}}">
+      {{/each}}
+      <button type="submit">update</button>
+    </form>
+  </section>
+
+</div>
